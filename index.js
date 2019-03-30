@@ -5,12 +5,12 @@ $(function(){
         //toggle check button
         if ($(this).attr('class') === 'shopping-item-toggle') {
             $(this).parents('li').find('.shopping-item').toggleClass('shopping-item__checked');
-        } 
-    });
+        }
 
         //delete list item 
-    $('.shopping-item-delete').click(function() { 
-        $(this).closest('li').remove(); 
+        else if ($(this).attr('class') === 'shopping-item-delete') { 
+            $(this).closest('li').remove();
+        };
     });
 
         //submit form
